@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Viaje del Byte: Explorando el Cerebro de tu Computador</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>El Viaje del Byte</h1>
+        <h2>Explorando el Cerebro de tu Computador</h2>
+    </header>
+
+    <nav>
+        <div class="nav-item" id="nav-inicio">Inicio</div>
+        <div class="nav-item" id="nav-componentes">Componentes</div>
+        <div class="nav-item" id="nav-simulacion">Simulación</div>
+    </nav>
+
+    <main>
+        <section id="intro-section" class="content-section">
+            <p>¡Bienvenido al fascinante mundo de tu computadora! Aquí, descubrirás cómo cada pieza de hardware trabaja en conjunto para dar vida a todo lo que haces. Prepárate para un viaje increíble a través del cerebro de tu máquina.</p>
+            <button id="start-simulation-btn">¡Comenzar la Simulación!</button>
+        </section>
+
+        <section id="components-section" class="content-section">
+            <h2>Componentes Clave del Hardware</h2>
+            <div class="components-grid">
+                <div class="component-card" data-component="teclado">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=Teclado" alt="Icono Teclado">
+                    <h3>Teclado</h3>
+                    <p class="description-text">Dispositivo de entrada que permite introducir texto y comandos. Cada pulsación genera una señal digital.</p>
+                </div>
+                <div class="component-card" data-component="mouse">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=Mouse" alt="Icono Mouse">
+                    <h3>Ratón (Mouse)</h3>
+                    <p class="description-text">Periférico de entrada para interactuar con la interfaz gráfica mediante movimientos y clics.</p>
+                </div>
+                <div class="component-card" data-component="monitor">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=Monitor" alt="Icono Monitor">
+                    <h3>Monitor</h3>
+                    <p class="description-text">Dispositivo de salida visual que muestra la información procesada por la computadora.</p>
+                </div>
+                <div class="component-card" data-component="cpu">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=CPU" alt="Icono CPU">
+                    <h3>CPU</h3>
+                    <p class="description-text">La Unidad Central de Procesamiento es el "cerebro" de la computadora, ejecuta instrucciones y realiza cálculos.</p>
+                </div>
+                <div class="component-card" data-component="ram">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=RAM" alt="Icono RAM">
+                    <h3>RAM</h3>
+                    <p class="description-text">Memoria de Acceso Aleatorio. Almacena temporalmente los datos que la CPU necesita usar de forma rápida.</p>
+                </div>
+                <div class="component-card" data-component="ssd-hdd">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=SSD/HDD" alt="Icono SSD/HDD">
+                    <h3>SSD/HDD</h3>
+                    <p class="description-text">Unidades de Almacenamiento Persistente. Guardan programas y archivos de forma permanente.</p>
+                </div>
+                <div class="component-card" data-component="gpu">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=GPU" alt="Icono GPU">
+                    <h3>GPU</h3>
+                    <p class="description-text">Unidad de Procesamiento Gráfico. Especializada en renderizar imágenes y videos para la pantalla.</p>
+                </div>
+                <div class="component-card" data-component="sound-card">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=Sonido" alt="Icono Tarjeta de Sonido">
+                    <h3>Tarjeta de Sonido</h3>
+                    <p class="description-text">Procesa las señales de audio digitales para convertirlas en sonido analógico que los altavoces pueden reproducir.</p>
+                </div>
+                <div class="component-card" data-component="speakers">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=Altavoces" alt="Icono Altavoces">
+                    <h3>Altavoces</h3>
+                    <p class="description-text">Dispositivos de salida que transforman las señales de audio en ondas sonoras audibles.</p>
+                </div>
+                <div class="component-card" data-component="network-card">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=Red" alt="Icono Tarjeta de Red">
+                    <h3>Tarjeta de Red</h3>
+                    <p class="description-text">Permite al computador conectarse a redes e Internet para enviar y recibir datos.</p>
+                </div>
+                <div class="component-card" data-component="chipset">
+                    <img src="https://via.placeholder.com/80/FFA500/000000?text=Chipset" alt="Icono Chipset">
+                    <h3>Chipset</h3>
+                    <p class="description-text">Un conjunto de chips en la placa base que actúa como el "director de tráfico" de la información entre componentes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulation-section" class="content-section">
+            <h2>Tu Simulador de Hardware Interactivo</h2>
+            <div id="simulation-output">
+                <p>Simulación iniciada: Sistema Operativo Básico cargado y listo para interacción.</p>
+            </div>
+            <div class="simulation-controls">
+                <input type="text" id="key-input" maxlength="1" placeholder="Presiona una tecla (A, S, N)">
+                <button id="simulate-key-btn">Simular Tecla</button>
+                <button id="simulate-sound-btn">Simular Sonido ('S')</button>
+                <button id="simulate-network-btn">Simular Red ('N')</button>
+            </div>
+            <button id="reset-simulation-btn">Reiniciar Simulación</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
